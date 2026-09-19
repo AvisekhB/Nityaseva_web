@@ -7,7 +7,7 @@ A static website (plain HTML, CSS and JavaScript). No build step needed.
 ## Files
 - `index.html` : all page text and sections
 - `css/style.css` : colours and fonts are at the top (`:root`)
-- `js/main.js` : phone, email, address, hours and plan prices are in the `CONFIG` block at the top
+- `js/main.js` : phone, email, address and hours are in the `CONFIG` block at the top
 - `assets/` : your logo in different sizes and the favicon
 
 ## Publish on GitHub Pages
