@@ -1,621 +1,364 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Nityaseva - Eternal service, Timeless care. Senior care coordination and assistance for elderly parents in Asansol and Kolkata.">
-    <title>Nityaseva | Eternal Service, Timeless Care - Senior Care Services</title>
-    <link rel="icon" type="image/png" href="logo.png">
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nityaseva | Eternal service, Timeless care.</title>
+  <meta name="description" content="Nityaseva brings preventive healthcare, wellness and everyday support to parents and seniors, so families can worry less.">
+  <meta name="theme-color" content="#06183C">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <meta property="og:title" content="Nityaseva | Eternal service, Timeless care.">
+  <meta property="og:description" content="Preventive healthcare, wellness and everyday support for parents and seniors.">
+  <meta property="og:image" content="assets/logo.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Mulish:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container">
-            <div class="nav-wrapper">
-                <div class="logo">
-                    <img src="logo.png" alt="Nityaseva Logo" class="logo-img">
-                    <div class="logo-text">
-                        <span class="brand-name">NITYASEVA</span>
-                        <span class="tagline">Eternal service, Timeless care.</span>
-                    </div>
-                </div>
-                <button class="mobile-menu-toggle" id="mobileMenuToggle">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <ul class="nav-menu" id="navMenu">
-                    <li><a href="#home" class="nav-link">Home</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#services" class="nav-link">Services</a></li>
-                    <li><a href="#pricing" class="nav-link">Pricing</a></li>
-                    <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
-                    <li><a href="#faq" class="nav-link">FAQ</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
-                    <li><a href="#express-interest" class="btn btn-primary">Express Interest</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+  <a class="skip" href="#main">Skip to content</a>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">Your parents' health, handled.</h1>
-                <p class="hero-subtitle">Trusted local care coordination for elderly parents in Asansol & Kolkata. Scheduled visits, health monitoring, and peace of mind for families.</p>
-                <div class="hero-cta">
-                    <a href="#express-interest" class="btn btn-primary btn-large">Book First Visit</a>
-                    <a href="#how-it-works" class="btn btn-secondary btn-large">See How It Works</a>
-                </div>
-                <div class="hero-features">
-                    <div class="feature-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span>Free home visit</span>
-                    </div>
-                    <div class="feature-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span>Full wellness report</span>
-                    </div>
-                    <div class="feature-item">
-                        <i class="fas fa-check-circle"></i>
-                        <span>Cancel anytime</span>
-                    </div>
-                </div>
-            </div>
-            <div class="hero-image">
-                <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e61aa1?w=600&h=500&fit=crop" alt="Senior Care">
-            </div>
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="top">
+    <div class="wrap header-row">
+      <a class="brand" href="#top" aria-label="Nityaseva home">
+        <img src="assets/logo.webp" alt="" width="52" height="52">
+        <span class="brand-text">
+          <span class="brand-name">Nityaseva</span>
+          <span class="brand-tag">Eternal service, Timeless care.</span>
+        </span>
+      </a>
+
+      <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <a href="#services">Services</a>
+        <a href="#process">How it works</a>
+        <a href="#plans">Plans</a>
+        <a href="#about">About</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn-gold btn-sm" href="#contact">Book a free call</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <h1>Preventive care for the people who raised you.</h1>
+          <p class="lead">Nityaseva looks after parents and seniors with regular health checks, trusted doctors, physiotherapy and a team that picks up the phone. You stay close, even when you live far away.</p>
+          <div class="hero-actions">
+            <a class="btn btn-gold" href="#contact">Book a free call</a>
+            <a class="btn btn-ghost" href="#services">See what we do</a>
+          </div>
+          <p class="hero-note">Made for adults aged 45 and above, and for the families who care about them.</p>
         </div>
+        <div class="hero-mark">
+          <div class="glow" aria-hidden="true"></div>
+          <img src="assets/logo.png" alt="Nityaseva logo: two cupped hands holding a white lotus" width="520" height="520">
+        </div>
+      </div>
+      <svg class="hero-wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0,40 C240,95 480,95 720,55 C960,15 1200,10 1440,50 L1440,90 L0,90 Z"/></svg>
     </section>
 
-    <!-- Trust Bar -->
-    <section class="trust-bar">
-        <div class="container">
-            <div class="trust-items">
-                <div class="trust-item">
-                    <i class="fas fa-user-nurse"></i>
-                    <span>Certified Care Executives</span>
-                </div>
-                <div class="trust-item">
-                    <i class="fas fa-shield-alt"></i>
-                    <span>Background Verified Staff</span>
-                </div>
-                <div class="trust-item">
-                    <i class="fas fa-clock"></i>
-                    <span>24/7 Coordination Support</span>
-                </div>
-                <div class="trust-item">
-                    <i class="fas fa-map-marker-alt"></i>
-                    <span>Serving Asansol & Kolkata</span>
-                </div>
-            </div>
-        </div>
+    <!-- ============ MEANING STRIP ============ -->
+    <section class="meaning">
+      <div class="wrap meaning-grid">
+        <p class="meaning-word"><strong>Nitya</strong> means every day, without end.</p>
+        <p class="meaning-word"><strong>Seva</strong> means service given with a full heart.</p>
+        <p class="meaning-word meaning-join">Care that shows up daily, and stays.</p>
+      </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-        <div class="container">
-            <div class="section-header">
-                <h2>Why Nityaseva?</h2>
-                <p>Creating a dependable local care layer for seniors living independently</p>
-            </div>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Families living away from elderly parents need a trusted local presence. Seniors often need practical assistance without full-time nursing. Care is fragmented across domestic help, nursing, pharmacies, hospitals and individual providers.</p>
-                    <p><strong>Nityaseva combines human presence, coordination, reporting and technology</strong> to provide comprehensive care + safety + peace of mind.</p>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <div class="stat-number">20+</div>
-                            <div class="stat-label">Families in Pilot</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-number">25-30</div>
-                            <div class="stat-label">Seniors Covered</div>
-                        </div>
-                        <div class="stat">
-                            <div class="stat-number">95%</div>
-                            <div class="stat-label">Visit Completion</div>
-                        </div>
-                    </div>
-                </div>
-                <div class="about-image">
-                    <img src="https://images.unsplash.com/photo-1581579438747-1dc8d175f39e?w=600&h=500&fit=crop" alt="Care Executive">
-                </div>
-            </div>
+    <!-- ============ SERVICES ============ -->
+    <section class="section" id="services">
+      <div class="wrap services-grid">
+        <div class="services-intro">
+          <h2>One team for everything your parents need to stay well.</h2>
+          <p>Instead of chasing clinics, reports and reminders, your family gets a single point of contact. We coordinate the care and keep you informed.</p>
+          <a class="btn btn-blue" href="#contact">Talk to a care advisor</a>
         </div>
+
+        <ul class="service-list">
+          <li>
+            <span class="ico" aria-hidden="true">
+              <svg viewBox="0 0 32 32"><path d="M4 17h6l3-7 5 13 3-6h7"/><path d="M16 27C8 21 4 17 4 11.5A6.5 6.5 0 0 1 16 8a6.5 6.5 0 0 1 12 3.5C28 17 24 21 16 27Z" opacity=".35"/></svg>
+            </span>
+            <div>
+              <h3>Health checks and screenings</h3>
+              <p>Regular assessments that catch problems early: blood work, heart, bones, eyesight and more, arranged at a place and time that suits your parents.</p>
+            </div>
+          </li>
+          <li>
+            <span class="ico" aria-hidden="true">
+              <svg viewBox="0 0 32 32"><circle cx="16" cy="7" r="3.5"/><path d="M16 12v8m0 0-5 8m5-8 5 8M8 15l8-3 8 3"/></svg>
+            </span>
+            <div>
+              <h3>Doctors and specialists</h3>
+              <p>Consultations with general physicians and specialists, online or in person, with notes shared with the family after every visit.</p>
+            </div>
+          </li>
+          <li>
+            <span class="ico" aria-hidden="true">
+              <svg viewBox="0 0 32 32"><path d="M9 6h14M12 6v6l-5 11a3 3 0 0 0 2.7 4.3h12.6A3 3 0 0 0 25 23l-5-11V6"/><path d="M10 20h12"/></svg>
+            </span>
+            <div>
+              <h3>Chronic condition care</h3>
+              <p>Steady support for diabetes, blood pressure, arthritis and other long-term conditions, with follow-ups so nothing slips.</p>
+            </div>
+          </li>
+          <li>
+            <span class="ico" aria-hidden="true">
+              <svg viewBox="0 0 32 32"><g transform="rotate(-40 16 16)"><rect x="3" y="11" width="26" height="10" rx="5"/><path d="M16 11v10"/></g></svg>
+            </span>
+            <div>
+              <h3>Medicine reminders and refills</h3>
+              <p>A simple routine for the right dose at the right time, and refills ordered before the strip runs out.</p>
+            </div>
+          </li>
+          <li>
+            <span class="ico" aria-hidden="true">
+              <svg viewBox="0 0 32 32"><path d="M16 3 5 7v8c0 7 4.5 11.5 11 14 6.5-2.5 11-7 11-14V7Z"/><path d="M16 11v8M12 15h8"/></svg>
+            </span>
+            <div>
+              <h3>Emergency coordination</h3>
+              <p>When something goes wrong, we help arrange the nearest hospital, ambulance and paperwork while you are on your way.</p>
+            </div>
+          </li>
+          <li>
+            <span class="ico" aria-hidden="true">
+              <svg viewBox="0 0 32 32"><path d="M3 15 16 4l13 11"/><path d="M6 13v14h20V13"/><path d="M12 27v-8h8v8"/></svg>
+            </span>
+            <div>
+              <h3>Physiotherapy and wellness at home</h3>
+              <p>Gentle exercise plans, physiotherapy sessions, companionship visits and lifestyle guidance that keep seniors active and independent.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
     </section>
 
-    <!-- Services Section -->
-    <section id="services" class="services">
-        <div class="container">
-            <div class="section-header">
-                <h2>Our Services</h2>
-                <p>Comprehensive care coordination tailored to your parents' needs</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-heartbeat"></i>
-                    </div>
-                    <h3>Wellbeing Checks</h3>
-                    <p>Regular wellbeing conversations, safety checks, and detailed reports to keep you informed.</p>
-                    <span class="service-price">Included in plans</span>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-stethoscope"></i>
-                    </div>
-                    <h3>Health Measurements</h3>
-                    <p>BP, pulse, SpO2, temperature, and glucose monitoring with non-diagnostic observations.</p>
-                    <span class="service-price">Included in plans</span>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-pills"></i>
-                    </div>
-                    <h3>Medicine Support</h3>
-                    <p>Medicine availability checks and pickup/delivery coordination (₹199 + cost).</p>
-                    <span class="service-price">₹199 per pickup</span>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-shopping-basket"></i>
-                    </div>
-                    <h3>Grocery & Essentials</h3>
-                    <p>Approved essential item pickup and delivery to ensure daily needs are met.</p>
-                    <span class="service-price">₹199 per pickup</span>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-user-md"></i>
-                    </div>
-                    <h3>Doctor Coordination</h3>
-                    <p>Appointment scheduling, home visit coordination, and follow-up management.</p>
-                    <span class="service-price">Variable</span>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-flask"></i>
-                    </div>
-                    <h3>Lab Test Coordination</h3>
-                    <p>Partner lab booking, sample collection coordination, and report delivery.</p>
-                    <span class="service-price">Variable</span>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-procedures"></i>
-                    </div>
-                    <h3>Physiotherapy</h3>
-                    <p>Professional physiotherapy sessions through qualified partner therapists.</p>
-                    <span class="service-price">₹599-₹799/session</span>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-hospital"></i>
-                    </div>
-                    <h3>Hospital Coordination</h3>
-                    <p>Admission assistance, document management, and family coordination (₹799).</p>
-                    <span class="service-price">₹799</span>
-                </div>
-                <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-exclamation-triangle"></i>
-                    </div>
-                    <h3>Emergency Support</h3>
-                    <p>24/7 emergency coordination with immediate escalation and family notification.</p>
-                    <span class="service-price">Add-on available</span>
-                </div>
-            </div>
+    <!-- ============ PROCESS ============ -->
+    <section class="section section-mist" id="process">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>How Nityaseva works</h2>
+          <p>Four steps, and you are never doing it alone.</p>
         </div>
+        <ol class="steps">
+          <li>
+            <span class="step-n">1</span>
+            <h3>Tell us about your parents</h3>
+            <p>A short, friendly call to understand health history, routines and what worries you most.</p>
+          </li>
+          <li>
+            <span class="step-n">2</span>
+            <h3>Start with a health check</h3>
+            <p>We arrange a baseline assessment so everyone knows where things stand today.</p>
+          </li>
+          <li>
+            <span class="step-n">3</span>
+            <h3>Get a personal care plan</h3>
+            <p>Clear, written steps: check-ups, medicines, exercise and diet, tailored to the person.</p>
+          </li>
+          <li>
+            <span class="step-n">4</span>
+            <h3>Stay supported</h3>
+            <p>Regular follow-ups and updates to the family, plus a real person to call any day.</p>
+          </li>
+        </ol>
+      </div>
     </section>
 
-    <!-- Pricing Section -->
-    <section id="pricing" class="pricing">
-        <div class="container">
-            <div class="section-header">
-                <h2>Simple, Transparent Pricing</h2>
-                <p>Choose the plan that best fits your parents' needs</p>
-            </div>
-            <div class="pricing-grid">
-                <div class="pricing-card">
-                    <div class="pricing-header">
-                        <h3>SAFE</h3>
-                        <div class="pricing-amount">
-                            <span class="currency">₹</span>
-                            <span class="price">1,799</span>
-                            <span class="period">/month</span>
-                        </div>
-                        <p class="pricing-subtitle">Single Parent</p>
-                    </div>
-                    <div class="pricing-body">
-                        <ul class="pricing-features">
-                            <li><i class="fas fa-check"></i> Senior Wellbeing Checks</li>
-                            <li><i class="fas fa-check"></i> Basic Health Measurements</li>
-                            <li><i class="fas fa-check"></i> Medicine Availability Check</li>
-                            <li><i class="fas fa-check"></i> Doctor Appointment Coordination</li>
-                            <li><i class="fas fa-check"></i> Home Safety Check</li>
-                            <li><i class="fas fa-check"></i> Monthly Family Report</li>
-                        </ul>
-                    </div>
-                    <div class="pricing-footer">
-                        <a href="#express-interest" class="btn btn-outline">Choose Plan</a>
-                    </div>
-                </div>
-                <div class="pricing-card featured">
-                    <div class="featured-badge">Most Chosen</div>
-                    <div class="pricing-header">
-                        <h3>CARE</h3>
-                        <div class="pricing-amount">
-                            <span class="currency">₹</span>
-                            <span class="price">3,499</span>
-                            <span class="period">/month</span>
-                        </div>
-                        <p class="pricing-subtitle">Single Parent</p>
-                    </div>
-                    <div class="pricing-body">
-                        <ul class="pricing-features">
-                            <li><i class="fas fa-check"></i> Everything in SAFE</li>
-                            <li><i class="fas fa-check"></i> 2 Nurse Home Visits/Month</li>
-                            <li><i class="fas fa-check"></i> Medicine Pickup (2/month)</li>
-                            <li><i class="fas fa-check"></i> Grocery Pickup (2/month)</li>
-                            <li><i class="fas fa-check"></i> 1 Doctor Call/Month</li>
-                            <li><i class="fas fa-check"></i> Priority Support</li>
-                        </ul>
-                    </div>
-                    <div class="pricing-footer">
-                        <a href="#express-interest" class="btn btn-primary">Choose Plan</a>
-                    </div>
-                </div>
-                <div class="pricing-card">
-                    <div class="pricing-header">
-                        <h3>PRIORITY</h3>
-                        <div class="pricing-amount">
-                            <span class="currency">₹</span>
-                            <span class="price">5,999</span>
-                            <span class="period">/month</span>
-                        </div>
-                        <p class="pricing-subtitle">Single Parent</p>
-                    </div>
-                    <div class="pricing-body">
-                        <ul class="pricing-features">
-                            <li><i class="fas fa-check"></i> Everything in CARE</li>
-                            <li><i class="fas fa-check"></i> 4 Nurse Home Visits/Month</li>
-                            <li><i class="fas fa-check"></i> Unlimited Medicine Pickup</li>
-                            <li><i class="fas fa-check"></i> 2 Doctor Calls/Month</li>
-                            <li><i class="fas fa-check"></i> Care Manager Visit</li>
-                            <li><i class="fas fa-check"></i> 24/7 Priority Support</li>
-                        </ul>
-                    </div>
-                    <div class="pricing-footer">
-                        <a href="#express-interest" class="btn btn-outline">Choose Plan</a>
-                    </div>
-                </div>
-            </div>
-            <div class="pricing-note">
-                <p><strong>Couple Plans Available:</strong> SAFE ₹2,999 | CARE ₹5,499 | PRIORITY ₹8,999 per month</p>
-                <p><em>All plans include essential local care layer. Add-on services available at additional cost.</em></p>
-            </div>
+    <!-- ============ PLANS ============ -->
+    <section class="section" id="plans">
+      <div class="wrap">
+        <div class="section-head">
+          <h2>Care plans that grow with your family</h2>
+          <p>Start small or cover everything. You can change plans at any time.</p>
         </div>
+
+        <div class="plans">
+          <article class="plan">
+            <h3>Essential</h3>
+            <p class="plan-for">For parents who are mostly well and want to stay that way.</p>
+            <p class="plan-price" data-price="essential">Ask for a quote</p>
+            <ul>
+              <li>Yearly full-body health check</li>
+              <li>Doctor consultations by phone or video</li>
+              <li>Digital health record for the family</li>
+              <li>Care advisor on call, weekdays</li>
+            </ul>
+            <a class="btn btn-outline" href="#contact" data-plan="Essential">Choose Essential</a>
+          </article>
+
+          <article class="plan plan-featured">
+            <p class="plan-badge">Most chosen</p>
+            <h3>Complete</h3>
+            <p class="plan-for">For parents managing a condition or living alone.</p>
+            <p class="plan-price" data-price="complete">Ask for a quote</p>
+            <ul>
+              <li>Everything in Essential</li>
+              <li>Chronic condition monitoring and follow-ups</li>
+              <li>Medicine reminders and refills</li>
+              <li>Physiotherapy and wellness sessions</li>
+              <li>Emergency coordination, all days</li>
+            </ul>
+            <a class="btn btn-gold" href="#contact" data-plan="Complete">Choose Complete</a>
+          </article>
+
+          <article class="plan">
+            <h3>Family Circle</h3>
+            <p class="plan-for">For families caring for both parents, or more than one household.</p>
+            <p class="plan-price" data-price="family">Ask for a quote</p>
+            <ul>
+              <li>Everything in Complete, for two people</li>
+              <li>Shared family dashboard and updates</li>
+              <li>Priority scheduling with specialists</li>
+              <li>Dedicated care manager</li>
+            </ul>
+            <a class="btn btn-outline" href="#contact" data-plan="Family Circle">Choose Family Circle</a>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <!-- How It Works Section -->
-    <section id="how-it-works" class="how-it-works">
-        <div class="container">
-            <div class="section-header">
-                <h2>How It Works</h2>
-                <p>Getting started is simple and takes just minutes</p>
-            </div>
-            <div class="steps-grid">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <div class="step-content">
-                        <h3>Sign Up & Add Parent</h3>
-                        <p>Create your account and add your parent's details: name, age, health conditions, and emergency contacts.</p>
-                    </div>
-                </div>
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <div class="step-content">
-                        <h3>Home Assessment</h3>
-                        <p>We conduct a free home assessment to understand specific needs and risk classification.</p>
-                    </div>
-                </div>
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <div class="step-content">
-                        <h3>Coordinator Assignment</h3>
-                        <p>A dedicated Care Executive is assigned to your family and schedules the first visit.</p>
-                    </div>
-                </div>
-                <div class="step">
-                    <div class="step-number">4</div>
-                    <div class="step-content">
-                        <h3>Regular Visits Begin</h3>
-                        <p>Our Care Executive visits your parent, records observations, and updates your dashboard.</p>
-                    </div>
-                </div>
-                <div class="step">
-                    <div class="step-number">5</div>
-                    <div class="step-content">
-                        <h3>Stay Informed</h3>
-                        <p>Receive real-time updates, health reports, and coordinate services as needed.</p>
-                    </div>
-                </div>
-            </div>
+    <!-- ============ ABOUT ============ -->
+    <section class="about" id="about">
+      <div class="wrap about-grid">
+        <div class="about-img">
+          <img src="assets/logo.png" alt="" width="420" height="420" loading="lazy">
         </div>
+        <div class="about-copy">
+          <h2>Care the way we would want for our own parents.</h2>
+          <p>Ageing well is not only about treating illness. It is about catching small things early, keeping the body moving and making sure nobody feels forgotten.</p>
+          <p>Nityaseva was built around that idea. We combine health expertise, simple technology and a warm human touch, so seniors keep their independence and families keep their peace of mind.</p>
+          <ul class="values">
+            <li><strong>Prevention first.</strong> We look for risks before they become emergencies.</li>
+            <li><strong>Respect always.</strong> Every plan is made with your parents, not just for them.</li>
+            <li><strong>Families in the loop.</strong> Clear updates, in plain language.</li>
+          </ul>
+        </div>
+      </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials">
-        <div class="container">
-            <div class="section-header">
-                <h2>What Families Say</h2>
-                <p>Trusted by families across Asansol and West Bengal</p>
-            </div>
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p>"Our coordinator called before we even realised Papa needed his medicines refilled. That kind of attention we never expected."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-name">Arjun M.</div>
-                        <div class="author-info">Son · Mumbai · Parents in Asansol</div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p>"My son said he finally stopped waking up worried. That alone made it worth it for me."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-name">Mr. Shyamlal V.</div>
-                        <div class="author-info">69 · Asansol</div>
-                    </div>
-                </div>
-                <div class="testimonial-card">
-                    <div class="testimonial-content">
-                        <p>"I thought health checks meant going to a clinic. They came home, checked everything, and left in 45 minutes. No fuss."</p>
-                    </div>
-                    <div class="testimonial-author">
-                        <div class="author-name">Mrs. Kamala R.</div>
-                        <div class="author-info">66 · Asansol</div>
-                    </div>
-                </div>
-            </div>
+    <!-- ============ FAQ ============ -->
+    <section class="section" id="faq">
+      <div class="wrap faq-grid">
+        <div class="faq-intro">
+          <h2>Questions families ask us</h2>
+          <p>Cannot find your answer? Call or message us and a care advisor will help.</p>
         </div>
+        <div class="faq-list">
+          <details>
+            <summary>Who is Nityaseva for?</summary>
+            <p>Adults aged 45 and above, and especially parents and grandparents whose families want reliable support, whether they live nearby or in another city or country.</p>
+          </details>
+          <details>
+            <summary>Do you replace my parents' own doctor?</summary>
+            <p>No. We work alongside their doctors, help with appointments and reports, and add specialists when needed.</p>
+          </details>
+          <details>
+            <summary>Can I manage everything from another city?</summary>
+            <p>Yes. You get updates after every check-up or visit, and one advisor you can call for anything.</p>
+          </details>
+          <details>
+            <summary>What happens in an emergency?</summary>
+            <p>Call India's emergency number 112 first. Then call us, and we will help with hospital coordination, family updates and paperwork.</p>
+          </details>
+          <details>
+            <summary>How do I get started?</summary>
+            <p>Book a free call using the form below. We will listen, suggest a plan and only start when you are comfortable.</p>
+          </details>
+        </div>
+      </div>
     </section>
 
-    <!-- FAQ Section -->
-    <section id="faq" class="faq">
-        <div class="container">
-            <div class="section-header">
-                <h2>Frequently Asked Questions</h2>
-                <p>Everything you want to know before booking</p>
-            </div>
-            <div class="faq-list">
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>Does my parent need to download an app or learn anything new?</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="faq-answer">
-                        <p>No, your parent doesn't need to download anything or learn new technology. Our Care Executive handles all digital reporting. You (the family member) will receive updates via the Nityaseva web portal or WhatsApp, whichever is convenient for you.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>What happens in an actual emergency?</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="faq-answer">
-                        <p>In a medical emergency, call 112 or go to the nearest hospital immediately. Nityaseva is not a substitute for emergency services. However, if you add our Emergency Cover (₹2,000/month), you get a dedicated coordinator who assists round the clock—reaching your parents' local doctors and hospitals, and keeping you informed throughout.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>I'm abroad. Can I sign up for my parents in India?</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Yes! Many of our clients are NRI children living abroad. You can sign up, make payments online, and receive all updates digitally. We serve as your trusted local presence in Asansol or Kolkata.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>What does the fortnightly health check actually include?</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="faq-answer">
-                        <p>A trained Care Executive visits your parent at home every 15 days. They check BP, blood sugar, do basic cardiac screening and medicine review, and look for early symptoms. Companionship is included—it's not a rushed clinical visit.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>Can I cancel? Is there a contract?</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Yes, you can cancel anytime with no lock-in period. We operate on a month-to-month subscription model. Simply provide notice before your next billing cycle.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>How much does Nityaseva cost?</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Our plans start at ₹1,799/month for a single parent (SAFE plan), ₹3,499/month for regular support (CARE plan), and ₹5,999/month for higher-touch priority support (PRIORITY plan). Couple plans are also available at discounted rates.</p>
-                    </div>
-                </div>
-                <div class="faq-item">
-                    <button class="faq-question">
-                        <span>What is Nityaseva?</span>
-                        <i class="fas fa-chevron-down"></i>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Nityaseva is a subscription-led senior-care coordination and assistance business for elderly parents whose children or family members may live elsewhere. We combine scheduled local visits, wellbeing checks, non-diagnostic health measurements, practical assistance, healthcare coordination, family reporting and escalation support.</p>
-                    </div>
-                </div>
-            </div>
+    <!-- ============ CONTACT ============ -->
+    <section class="contact" id="contact">
+      <div class="wrap contact-grid">
+        <div class="contact-info">
+          <h2>Book a free call</h2>
+          <p>Tell us a little about your family and a care advisor will get back to you.</p>
+          <dl>
+            <div><dt>Phone</dt><dd><a href="tel:+910000000000" data-phone>+91 00000 00000</a></dd></div>
+            <div><dt>Email</dt><dd><a href="mailto:hello@example.com" data-email>hello@example.com</a></dd></div>
+            <div><dt>Address</dt><dd data-address>Your address, City, State, India</dd></div>
+            <div><dt>Hours</dt><dd data-hours>Monday to Saturday, 9 am to 7 pm</dd></div>
+          </dl>
         </div>
+
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="field">
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="phone">Phone number</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" required>
+          </div>
+          <div class="field">
+            <label for="who">Who is the care for?</label>
+            <select id="who" name="who">
+              <option>Mother</option>
+              <option>Father</option>
+              <option>Both parents</option>
+              <option>Another family member</option>
+              <option>Myself</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="plan">Plan you are interested in</label>
+            <select id="plan" name="plan">
+              <option>Not sure yet</option>
+              <option>Essential</option>
+              <option>Complete</option>
+              <option>Family Circle</option>
+            </select>
+          </div>
+          <div class="field field-wide">
+            <label for="message">Anything we should know? (optional)</label>
+            <textarea id="message" name="message" rows="3"></textarea>
+          </div>
+          <button class="btn btn-gold btn-block" type="submit">Request a call back</button>
+          <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+        </form>
+      </div>
     </section>
+  </main>
 
-    <!-- Express Interest Form Section -->
-    <section id="express-interest" class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2>Express Interest</h2>
-                <p>Start with a free home visit. No obligation.</p>
-            </div>
-            <div class="contact-wrapper">
-                <div class="contact-form-wrapper">
-                    <form class="contact-form" id="interestForm">
-                        <div class="form-group">
-                            <label for="name">Your Name *</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email Address *</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="phone">Phone Number *</label>
-                            <input type="tel" id="phone" name="phone" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="parentName">Parent's Name *</label>
-                            <input type="text" id="parentName" name="parentName" required>
-                        </div>
-                        <div class="form-row">
-                            <div class="form-group">
-                                <label for="parentAge">Parent's Age</label>
-                                <input type="number" id="parentAge" name="parentAge">
-                            </div>
-                            <div class="form-group">
-                                <label for="location">Location *</label>
-                                <select id="location" name="location" required>
-                                    <option value="">Select Location</option>
-                                    <option value="asansol">Asansol</option>
-                                    <option value="kolkata">Kolkata</option>
-                                    <option value="other">Other (Specify)</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <label for="plan">Interested Plan</label>
-                            <select id="plan" name="plan">
-                                <option value="">Select a Plan</option>
-                                <option value="safe">SAFE - ₹1,799/month</option>
-                                <option value="care">CARE - ₹3,499/month</option>
-                                <option value="priority">PRIORITY - ₹5,999/month</option>
-                                <option value="unsure">Not Sure Yet</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Additional Information</label>
-                            <textarea id="message" name="message" rows="4" placeholder="Tell us about your parent's specific needs..."></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-primary btn-large btn-block">Submit Interest</button>
-                        <p class="form-note">We'll contact you within 24 hours to schedule your free home visit.</p>
-                    </form>
-                </div>
-                <div class="contact-info">
-                    <div class="info-card">
-                        <h3>Why Start Today?</h3>
-                        <ul>
-                            <li><i class="fas fa-check"></i> Free initial home assessment</li>
-                            <li><i class="fas fa-check"></i> No obligation to subscribe</li>
-                            <li><i class="fas fa-check"></i> Meet your Care Executive</li>
-                            <li><i class="fas fa-check"></i> Understand your parent's needs</li>
-                            <li><i class="fas fa-check"></i> Get a personalized care plan</li>
-                        </ul>
-                    </div>
-                    <div class="info-card">
-                        <h3>Contact Information</h3>
-                        <div class="contact-detail">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div>
-                                <strong>Service Areas</strong>
-                                <p>Asansol (Pilot) & Kolkata (Expansion)</p>
-                            </div>
-                        </div>
-                        <div class="contact-detail">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <strong>Email</strong>
-                                <p>info@nityaseva.com</p>
-                            </div>
-                        </div>
-                        <div class="contact-detail">
-                            <i class="fas fa-clock"></i>
-                            <div>
-                                <strong>Availability</strong>
-                                <p>Mon - Sat: 9:00 AM - 6:00 PM</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo.webp" alt="Nityaseva logo" width="84" height="84" loading="lazy">
+        <div>
+          <p class="footer-name">Nityaseva</p>
+          <p>Eternal service, Timeless care.</p>
         </div>
-    </section>
+      </div>
+      <nav aria-label="Footer">
+        <a href="#services">Services</a>
+        <a href="#process">How it works</a>
+        <a href="#plans">Plans</a>
+        <a href="#about">About</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <p class="footer-note">Nityaseva is not an emergency service. In an emergency, call 112 first.</p>
+    </div>
+    <div class="wrap footer-bottom">
+      <p>&copy; <span id="year">2026</span> Nityaseva. All rights reserved.</p>
+    </div>
+  </footer>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <div class="logo">
-                        <img src="logo.png" alt="Nityaseva Logo" class="logo-img-small">
-                        <div class="logo-text">
-                            <span class="brand-name">NITYASEVA</span>
-                            <span class="tagline">Eternal service, Timeless care.</span>
-                        </div>
-                    </div>
-                    <p>Creating a trusted, repeatable local-care operating system for seniors in Asansol and Kolkata.</p>
-                </div>
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h4>Quick Links</h4>
-                        <ul>
-                            <li><a href="#about">About Us</a></li>
-                            <li><a href="#services">Services</a></li>
-                            <li><a href="#pricing">Pricing</a></li>
-                            <li><a href="#faq">FAQ</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h4>Services</h4>
-                        <ul>
-                            <li><a href="#services">Wellbeing Checks</a></li>
-                            <li><a href="#services">Health Monitoring</a></li>
-                            <li><a href="#services">Medicine Support</a></li>
-                            <li><a href="#services">Emergency Coordination</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h4>Legal</h4>
-                        <ul>
-                            <li><a href="#">Privacy Policy</a></li>
-                            <li><a href="#">Terms of Service</a></li>
-                            <li><a href="#">Refund Policy</a></li>
-                            <li><a href="#">Consent Form</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Nityaseva. All rights reserved.</p>
-                <p class="disclaimer"><strong>Disclaimer:</strong> Nityaseva is a care coordination and assistance business, not a substitute for emergency services or independent medical diagnosis. In emergencies, always call 112 or go to the nearest hospital.</p>
-            </div>
-        </div>
-    </footer>
-
-    <!-- WhatsApp Float Button -->
-    <a href="https://wa.me/91XXXXXXXXXX" class="whatsapp-float" target="_blank" rel="noopener">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-
-    <script src="app.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
