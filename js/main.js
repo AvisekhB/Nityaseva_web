@@ -136,3 +136,27 @@ const CONFIG = {
   });
   show(0);
 })();
+
+/* ---------- "Made for you" persona tabs ---------- */
+(function personas() {
+  const tabs   = Array.from(document.querySelectorAll('.persona-tags [role="tab"]'));
+  const panels = Array.from(document.querySelectorAll('.persona-panel'));
+  if (!tabs.length) return;
+
+  function show(i, focus) {
+    const n = (i + tabs.length) % tabs.length;
+    tabs.forEach((t, k) => {
+      t.setAttribute("aria-selected", String(k === n));
+      t.tabIndex = k === n ? 0 : -1;
+      panels[k].hidden = k !== n;
+    });
+    if (focus) tabs[n].focus();
+  }
+  tabs.forEach((t, k) => {
+    t.addEventListener("click", () => show(k));
+    t.addEventListener("keydown", e => {
+      if (e.key === "ArrowRight" || e.key === "ArrowDown") { e.preventDefault(); show(k + 1, true); }
+      if (e.key === "ArrowLeft"  || e.key === "ArrowUp")   { e.preventDefault(); show(k - 1, true); }
+    });
+  });
+})();

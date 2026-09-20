@@ -49,7 +49,7 @@ em { font-style: italic; }
 
 /* ---------- Buttons ---------- */
 .btn {
-  display: inline-block;
+  display: inline-flex; align-items: center; justify-content: center;
   font: 600 1rem/1 var(--sans);
   padding: 1rem 1.7rem;
   border-radius: 999px;
@@ -110,6 +110,12 @@ em { font-style: italic; }
   @keyframes rise { to { opacity: 1; transform: none; } }
 }
 
+/* pill button with icons (hero) */
+.btn-pill { display: inline-flex; align-items: center; gap: .55rem; background: #fff; color: var(--forest); }
+.btn-pill svg { width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.btn-pill .chev { width: 16px; height: 16px; }
+.btn-pill:hover { background: var(--forest); border-color: var(--forest); color: #fff; }
+
 /* ---------- Pain points ---------- */
 .pain { padding: 1rem 0 3.5rem; }
 .pain-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 1.1rem; max-width: 660px; }
@@ -122,6 +128,31 @@ em { font-style: italic; }
 .section-tint { background: var(--paper-deep); }
 .section-head { max-width: 40rem; margin-bottom: 2.2rem; }
 .section-head p { color: var(--ink-soft); font-size: 1.15rem; }
+
+/* Hub: everything in one place */
+.hub-section { padding-top: 1rem; }
+.hub-card { background: #FBF8F0; border: 1px solid var(--line); border-radius: 28px; padding: clamp(2rem, 5vw, 3.5rem) 1.5rem 2rem; overflow: hidden; }
+.hub-head { text-align: center; max-width: 34rem; margin: 0 auto .5rem; }
+.hub-head h2 { margin: 0; }
+.hub { position: relative; height: 580px; --r: 230px; }
+.hub-center {
+  position: absolute; left: 50%; top: 50%; z-index: 2; transform: translate(-50%, -50%);
+  width: 124px; height: 124px; border-radius: 50%; background: var(--forest); color: #fff;
+  display: grid; place-content: center; justify-items: center; gap: .3rem; text-align: center;
+  font: 700 .78rem/1.1 var(--sans); letter-spacing: .04em; text-transform: uppercase;
+  box-shadow: 0 0 0 10px rgba(46,79,107,.08), 0 0 0 24px rgba(46,79,107,.05);
+}
+.hub-center svg { width: 30px; height: 30px; fill: none; stroke: #fff; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.spoke { position: absolute; left: 50%; top: 50%; width: 0; height: 0; transform: rotate(var(--a)); }
+.spoke .line { position: absolute; left: 0; bottom: 0; height: var(--r); border-left: 2px dashed #C8CDC4; }
+.spoke .node {
+  position: absolute; left: 0; bottom: var(--r); z-index: 1;
+  transform: translate(-50%, 50%) rotate(calc(-1 * var(--a)));
+  display: inline-flex; align-items: center; gap: .5rem; white-space: nowrap;
+  background: #fff; border: 1px solid var(--line); border-radius: 999px; padding: .6rem 1rem;
+  font: 600 .98rem var(--sans); color: var(--ink); box-shadow: 0 6px 16px -8px rgba(46,79,107,.35);
+}
+.spoke .node svg { width: 20px; height: 20px; flex: none; fill: none; stroke: var(--forest); stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
 
 /* Services */
 .services-grid { display: grid; grid-template-columns: 5fr 7fr; gap: clamp(2rem, 6vw, 5rem); align-items: start; }
@@ -164,8 +195,22 @@ em { font-style: italic; }
 .hiw-nav span { color: var(--ink-soft); font-size: .95rem; }
 .hiw-nav button:disabled { opacity: .4; cursor: default; }
 
+/* Made for you: personas */
+.everyone-grid { display: grid; grid-template-columns: 5fr 7fr; gap: clamp(1.5rem, 4vw, 3rem); align-items: center; }
+.everyone-left h2 em { color: var(--teal); }
+.persona-tags { display: flex; flex-wrap: wrap; gap: .6rem; margin-top: 1.6rem; }
+.persona-tag { font: 600 1rem var(--sans); padding: .7rem 1.15rem; border-radius: 999px; border: 1.5px solid var(--line); background: #fff; color: var(--ink); cursor: pointer; transition: background .2s, color .2s, border-color .2s; }
+.persona-tag:hover { border-color: var(--forest); }
+.persona-tag[aria-selected="true"] { background: var(--forest); border-color: var(--forest); color: #fff; }
+.persona-card { background: var(--card); border: 1px solid var(--line); border-radius: var(--radius); padding: clamp(1.4rem, 3vw, 2.2rem); display: grid; grid-template-columns: 1fr 1.25fr; gap: 1.6rem; align-items: center; }
+.persona-illus svg { width: 100%; height: auto; }
+.persona-panel h3 { font-size: 1.45rem; }
+.persona-panel h3 span { color: var(--teal); font-style: italic; }
+.persona-panel p { color: var(--ink-soft); }
+.persona-panel[hidden] { display: none; }
+
 /* About */
-.about { padding: clamp(3rem, 7vw, 5.5rem) 0; }
+.about { padding: clamp(3rem, 7vw, 5.5rem) 0; background: var(--paper-deep); }
 .about-grid { display: grid; grid-template-columns: 5fr 7fr; gap: clamp(2rem, 6vw, 5rem); align-items: center; }
 .about-img img { width: min(380px, 100%); margin-inline: auto; filter: drop-shadow(0 20px 32px rgba(46, 79, 107, .25)); }
 .about-copy p { color: var(--ink-soft); }
@@ -224,7 +269,7 @@ em { font-style: italic; }
   .hero-grid { grid-template-columns: 1fr; }
   .hero-mark { order: -1; }
   .hero-mark img { width: min(280px, 65%); }
-  .services-grid, .hiw, .about-grid, .faq-grid, .contact-grid { grid-template-columns: 1fr; }
+  .services-grid, .hiw, .about-grid, .faq-grid, .contact-grid, .everyone-grid { grid-template-columns: 1fr; }
   .services-intro { position: static; }
   .about-img img { width: min(240px, 60%); }
   .footer-grid { grid-template-columns: 1fr; }
@@ -241,6 +286,19 @@ em { font-style: italic; }
   .site-nav.open { display: flex; }
   .site-nav a:not(.btn) { padding: .9rem 0; border-bottom: 1px solid var(--line); font-size: 1.1rem; }
   .site-nav .btn { margin-top: 1rem; text-align: center; }
+}
+
+@media (max-width: 640px) {
+  /* hub becomes a simple grid on small screens */
+  .hub { height: auto; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .7rem; padding-top: 1.5rem; }
+  .hub-center { position: static; transform: none; order: -1; grid-column: 1 / -1; justify-self: center; margin-bottom: 1.4rem; }
+  .spoke { position: static; display: flex; min-width: 0; width: auto; height: auto; transform: none; }
+  .spoke .line { display: none; }
+  .hub-card { padding-inline: .75rem; }
+  .spoke .node { position: static; transform: none; flex: 1; min-width: 0; white-space: normal; border-radius: 16px; font-size: .84rem; gap: .35rem; padding: .6rem .6rem; hyphens: auto; overflow-wrap: anywhere; }
+  .spoke .node svg { width: 18px; height: 18px; }
+  .persona-card { grid-template-columns: 1fr; }
+  .persona-illus { max-width: 220px; margin-inline: auto; }
 }
 
 @media (max-width: 560px) {
