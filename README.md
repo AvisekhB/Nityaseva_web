@@ -7,8 +7,16 @@ A static website (plain HTML, CSS and JavaScript). No build step needed.
 ## Files
 - `index.html` : all page text and sections
 - `css/style.css` : colours and fonts are at the top (`:root`)
-- `js/main.js` : phone, email, address and hours are in the `CONFIG` block at the top
+- `js/main.js` : phone, WhatsApp, email, Instagram, address, hours and the Google Sheet URL are in the `CONFIG` block at the top
 - `assets/` : your logo in different sizes and the favicon
+- `google-sheet-apps-script/` : connects the contact form to a Google Sheet — see `README-DEPLOY.md` inside it
+
+## Lead capture
+Every "Request a call back" submission is sent to a Google Sheet (via the
+script in `google-sheet-apps-script/`) and also opens WhatsApp or email with
+the same details, so you get both a permanent record and an instant alert.
+Set this up once by following `google-sheet-apps-script/README-DEPLOY.md`,
+then paste the Web App URL into `sheetWebAppUrl` in `js/main.js`.
 
 ## Publish on GitHub Pages
 1. Create a new repository on github.com (for example `nityaseva`), set to Public.

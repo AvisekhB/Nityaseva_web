@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Nityaseva | Eternal service, Timeless care.</title>
-  <meta name="description" content="Nityaseva sends a trained care executive to check in on your parent, track their health and handle small emergencies. Home care for seniors in Asansol, West Bengal.">
+  <meta name="description" content="Nityaseva sends a trained care executive to check in on your parent, track their health and handle small emergencies. Home care for seniors in Asansol & Burnpur, West Bengal.">
   <meta name="theme-color" content="#F8F4EA">
   <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
@@ -40,6 +40,7 @@
         <a href="#how-it-works">How it works</a>
         <a href="#about">About</a>
         <a href="#faq">FAQ</a>
+        <a href="#intro-pack">₹499 First Visit</a>
         <a class="btn btn-sm" href="#contact">Book First Visit</a>
       </nav>
     </div>
@@ -74,6 +75,7 @@
     <section class="pain">
       <div class="wrap">
         <ul class="pain-list">
+          <li><strong>"I'm fine" doesn't always mean fine.</strong> Parents often hide small health problems so their children won't worry — which is exactly how small problems become big ones.</li>
           <li><strong>You call, and everything sounds fine</strong>, but you can't actually see how they're doing day to day.</li>
           <li><strong>A fall or a missed dose</strong> can go unnoticed for hours when no one is nearby.</li>
           <li><strong>You've looked for help before</strong> and found either nothing reliable, or nothing that felt trustworthy enough.</li>
@@ -352,6 +354,22 @@
       </div>
     </section>
 
+    <!-- ============ INTRO PACK ============ -->
+    <section class="section intro-pack" id="intro-pack">
+      <div class="wrap intro-pack-card">
+        <div class="intro-pack-copy">
+          <p class="hero-place">Nityaseva Introduction Pack</p>
+          <h2>See how we care, before you commit to anything.</h2>
+          <p>One home visit. We check your parent's blood pressure, sugar and overall wellbeing, and tell you honestly what we find — no subscription required to try us.</p>
+        </div>
+        <div class="intro-pack-price">
+          <p class="price-amount">₹499<span>one-time home visit</span></p>
+          <a class="btn btn-amber" href="#contact">Book the ₹499 visit</a>
+          <a class="btn btn-outline btn-sm" data-whatsapp-link href="#" target="_blank" rel="noopener">Or message us on WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
     <!-- ============ CONTACT ============ -->
     <section class="contact" id="contact">
       <div class="wrap contact-grid">
@@ -361,6 +379,7 @@
           <dl>
             <div><dt>Phone</dt><dd><a href="tel:+910000000000" data-phone>+91 00000 00000</a></dd></div>
             <div><dt>Email</dt><dd><a href="mailto:hello@example.com" data-email>hello@example.com</a></dd></div>
+            <div><dt>Instagram</dt><dd><a href="#" data-instagram target="_blank" rel="noopener">@nityaseva.you</a></dd></div>
             <div><dt>Where</dt><dd data-address>Asansol, West Bengal</dd></div>
             <div><dt>Hours</dt><dd data-hours>Monday to Saturday, 9 am to 7 pm</dd></div>
           </dl>
@@ -368,14 +387,14 @@
 
         <form class="contact-form" id="contact-form" novalidate>
           <div class="field">
-            <label for="name">Your name</label>
-            <input id="name" name="name" type="text" autocomplete="name" required>
+            <label for="senior_name">Name of senior</label>
+            <input id="senior_name" name="senior_name" type="text" required>
           </div>
           <div class="field">
-            <label for="phone">Phone number</label>
-            <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+91 98765 43210" required>
+            <label for="age">Age</label>
+            <input id="age" name="age" type="number" inputmode="numeric" min="40" max="120" placeholder="e.g. 72">
           </div>
-          <div class="field">
+          <div class="field field-wide">
             <label for="who">Your relationship to the senior</label>
             <select id="who" name="who">
               <option>Son</option>
@@ -386,6 +405,22 @@
             </select>
           </div>
           <div class="field">
+            <label for="contact_name">Name of Contact Person</label>
+            <input id="contact_name" name="contact_name" type="text" autocomplete="name" required>
+          </div>
+          <div class="field">
+            <label for="contact_phone">Contact Person's Phone No.</label>
+            <input id="contact_phone" name="contact_phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+91 98765 43210" required>
+          </div>
+          <div class="field">
+            <label for="contact_relation">Relationship with Contact Person</label>
+            <input id="contact_relation" name="contact_relation" type="text" placeholder="e.g. Son, Neighbour, Caretaker">
+          </div>
+          <div class="field">
+            <label for="email">Contact Person's Email (optional)</label>
+            <input id="email" name="email" type="email" autocomplete="email" inputmode="email" placeholder="you@example.com">
+          </div>
+          <div class="field field-wide">
             <label for="city">Which city do they live in?</label>
             <input id="city" name="city" type="text" placeholder="e.g. Asansol">
           </div>
@@ -426,6 +461,7 @@
         <a href="#about">About</a>
         <a href="#faq">FAQ</a>
         <a href="#contact">Contact</a>
+        <a href="#" data-instagram target="_blank" rel="noopener">Instagram</a>
       </nav>
       <p class="footer-note">Nityaseva is not an emergency service. In an emergency, call 112 first.</p>
     </div>
